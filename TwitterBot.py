@@ -18,9 +18,9 @@ def troll(text):
 
 atSign = ["@"]
 
-tweets = api.user_timeline(screen_name="Hotpocketlxrd", count=100)
+tweets = api.user_timeline(screen_name="Username Here", count=100)
 for tweet in tweets:
     if tweet.text[0:2] != "RT":
         for i in atSign:
             tweet.text = tweet.text.replace(i, "")
-            api.update_with_media("mocking-spongebob.jpg", "@Hotpocketlxrd {}".format(troll(tweet.text)), tweet.id)
+            api.update_with_media("mocking-spongebob.jpg", "@(Username Here) {}".format(troll(tweet.text)), tweet.id)
