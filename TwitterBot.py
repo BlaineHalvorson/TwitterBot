@@ -1,9 +1,6 @@
 import random
 import tweepy
-
-auth = tweepy.OAuthHandler("bbhTsieJyckbAksSFqD4JC31b","rSz1dQGuvCSJ5sws08JjWm9KuQLvlMKMch4ycSxveJHr0hWq9X")
-auth.set_access_token("1249884242642960384-eyNRtVvApEXqG6J6Pbi1YWYucnCd0c","bqCOTtTQ5VCHyC0n2BMt4ay8ckWA9ElcUwvpTbqq5IRQT")
-api = tweepy.API(auth)
+from setup.py import *
 
 def troll(text):
     num = random.randint(0,1)
